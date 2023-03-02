@@ -1,0 +1,33 @@
+@use "../../sass/colors";
+
+#Navbar nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: colors.$navbar;
+    padding: 1rem 0;
+}
+
+#Navbar a {
+    padding: 0 2rem;
+}
+
+#Navbar .nav-logo img {
+    width: 10rem;
+}
+
+#Navbar .link {
+    color: colors.$subtext;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+#Navbar .link.active {
+    color: colors.$text;
+}
+
+#Navbar .link:hover {
+    color: colors.$hover;
+}

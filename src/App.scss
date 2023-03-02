@@ -1,0 +1,26 @@
+@use "sass/fonts";
+@use "sass/colors";
+
+:root {
+    font-family: fonts.$default-font;
+    text-align: center;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: colors.$bg;
+}
+
+p, span, a, ul, li, h1, h2, h3, h4, h5 {
+    color: colors.$text;
+}
+
+.link {
+    color: colors.$link;
+    transition: .3s;
+}
+
+.link:hover {
+    color: colors.$hover;
+}
