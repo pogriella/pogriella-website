@@ -1,5 +1,6 @@
 @use "sass/fonts";
 @use "sass/colors";
+@use "../node_modules/bootstrap/scss/bootstrap";
 
 :root {
     font-family: fonts.$default-font;
@@ -9,7 +10,7 @@
 body {
     padding: 0;
     margin: 0;
-    background-color: colors.$bg;
+    background-color: colors.$body-bg;
 }
 
 p, span, a, ul, li, h1, h2, h3, h4, h5 {
@@ -23,4 +24,26 @@ p, span, a, ul, li, h1, h2, h3, h4, h5 {
 
 .link:hover {
     color: colors.$hover;
+}
+
+.bg-loading {
+    position: fixed;
+    z-index: 998;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.spinner-grow {
+    position: fixed;
+    z-index: 999;
+    overflow: visible;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }
